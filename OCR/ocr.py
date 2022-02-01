@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 22 02:19:16 2022
+Created on Sat Jan 22  2022
 
 @author: Wekkin
 """
@@ -38,4 +38,4 @@ path_list = ['效果图','客户要求']
 path = '/home/Test/'+(keyword)+'/'+(path_list[0])
 if not os.path.exists(path):
     os.makedirs(path)
-print((keyword)+"文件夹以已建立")
+print((keyword)+"文件夹已建立")
