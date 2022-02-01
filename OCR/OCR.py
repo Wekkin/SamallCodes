@@ -44,6 +44,7 @@ keyword = ((datetoday)+("-")+
     (src['words_result'][4]['words'])+("-")+
     (src['words_result'][0]['words']))
 print (keyword)
+path = './Desktop'+(keyword)+'效果图'
 os.mkdir(keyword)
 
 
