@@ -11,6 +11,7 @@ import os
 
 '''
 通用文字识别（高精度版）
+
 '''
 request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic"
 # 二进制方式打开图片文件
