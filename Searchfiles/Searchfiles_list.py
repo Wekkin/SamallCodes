@@ -10,7 +10,7 @@ def search_files(folder_path, extensions):
             result.extend(file_list)
     return result
 
-folder_path = "D:\\邓伟清\\D盘\\WXWork"  # 替换为你要搜索的文件夹路径
+folder_path = "D:\\D盘\\WXWork"  # 替换为你要搜索的文件夹路径
 extensions = ["xlsx", "pdf", "docx", "pptx"]  # 要搜索的文件扩展名列表
 
 found_files = search_files(folder_path, extensions)
