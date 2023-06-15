@@ -1,3 +1,4 @@
+# makeFolders.py
 # -*- coding: utf-8 -*-
 
 import datetime
@@ -24,7 +25,7 @@ request_url = f"{request_url}?access_token={access_token}"
 # 二进制方式打开图片文件
 # 参数image：图像base64编码
 # 添加图片的绝对路径
-f = open('C:\\Users\\DWQ\\Desktop\\1.png', 'rb')
+f = open('C:\\Users\\opt\\Desktop\\1.png', 'rb')
 img = base64.b64encode(f.read())
 params = {"image": img}
 headers = {'content-type': 'application/x-www-form-urlencoded'}
@@ -36,8 +37,9 @@ if response:
 # 关键字
 timetoday = datetime.datetime.now()
 datetoday = timetoday.strftime("%Y%m%d")
-keyword = ((datetoday)+("-") +
+keyword = (
            (src['words_result'][3]['words'])+("-") +
+            (datetoday)+("-") +
            (src['words_result'][1]['words'])+("-") +
            (src['words_result'][2]['words'])+("-") +
            (src['words_result'][4]['words'])+("-") +
@@ -47,7 +49,7 @@ keyword = ((datetoday)+("-") +
 path_lists = ['测试效果、配置表', '客户要求、联络函']
 for path_list in path_lists:
     # win11，下最终文件生成路径
-    path = 'C:\\Users\\DWQ\\Desktop\\'+(keyword)+'\\'+(path_list)
+    path = 'C:\\Users\\opt\\Desktop\\'+(keyword)+'\\'+(path_list)
 
     # liunx,最终文件生成路径
     # path = '/home/Test/'+(keyword)+'/'+(path_list)
