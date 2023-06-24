@@ -46,7 +46,7 @@ keyword = (
            (src['words_result'][2]['words'])+("-") +
            (src['words_result'][4]['words'])+("-") +
            (src['words_result'][0]['words']))
-#print (keyword)
+print (keyword)
 
 path_lists = ['测试效果、配置表', '客户要求、联络函']
 for path_list in path_lists:
